@@ -8,9 +8,12 @@
         // name + path of where you'll be serving your site, e.g.:
         // appBaseUrl: "https://nationalmap.gov.au/",
 
+       
+
         googleUrlShortenerKey: null,
         googleAnalyticsKey: null,
         googleAnalyticsOptions: null,
+        "cesiumIonAccessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlYjllNTk5OC0xMGVjLTQ4ZjAtOTdkOC0yZjAwMjE5MzJkZDgiLCJpZCI6MzIzNzIsImlhdCI6MTYwMzEyMjE4Mn0.FyOtsZfXI2S47wb2SVtiWt-od3_Ff1YgUIDXyc5UcfA",
 
         // Log ConsoleAnalytics events to console
         // logToConsole: true,
