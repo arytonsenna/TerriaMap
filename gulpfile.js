@@ -256,7 +256,7 @@ gulp.task('render-datasource-templates', function(done) {
     var baseHrefFromConfig = serverConfig.baseHref;
     var indexResult = ejs.render(index, { baseHref: baseHrefFromConfig || "/"});
 
-    fs.writeFileSync(path.join('wwwroot', 'index.html'), new Buffer(indexResult));
+    fs.writeFileSync(path.join('wwwroot', 'index.html'), new Buffer.from(indexResult));
 
     var templateDir = 'datasources';
 
@@ -294,7 +294,7 @@ gulp.task('render-datasource-templates', function(done) {
             } catch (e) {
                 console.warn('Warning: Rendered template ' + outFilename + ' is not valid JSON');
             }
-            fs.writeFileSync(path.join('wwwroot/init', outFilename), new Buffer(result));
+            fs.writeFileSync(path.join('wwwroot/init', outFilename), new Buffer.from(result));
         }
     });
 
